@@ -1,0 +1,330 @@
+/* ============================================================
+   ALINE'S CLEANING — PREMIUM A6 FLYER STYLES (ULTIMATE)
+   Format: A6 (105mm x 148mm)
+   Visual: Editorial, Minimalist, Premium
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --c-bg:      #F7F4EE; /* Warm Cream */
+  --c-white:   #FFFFFF;
+  --c-sage:    #738A7A; /* Muted Sage */
+  --c-sage-dk: #5F7466;
+  --c-coal:    #2F3430; /* Deep Coal */
+  --c-muted:   #6E746F;
+  --c-gold:    #C7A874;
+  --c-border:  #E7DED2;
+
+  --f-serif: 'Cormorant Garamond', serif;
+  --f-sans:  'Manrope', sans-serif;
+
+  /* Print specific spacing */
+  --m-safe: 12mm;
+}
+
+/* ============================================================
+   RESET & BASE
+   ============================================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  background: #DFDCD7;
+  font-family: var(--f-sans);
+  color: var(--c-coal);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 80px 20px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Flyer Container (A6 Size) */
+.flyer {
+  width: 105mm;
+  height: 148mm;
+  background: var(--c-bg);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 40px 100px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Subtle Paper Grain Effect */
+.flyer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 100;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+@media print {
+  body { background: none; padding: 0; }
+  .flyer { box-shadow: none; page-break-after: always; }
+  .flyer::before { display: none; } /* Grain is usually captured by paper texture during print */
+}
+
+/* ============================================================
+   SHARED COMPONENTS
+   ============================================================ */
+.safe-zone {
+  flex: 1;
+  padding: var(--m-safe);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+
+.brand-header {
+  margin-bottom: 5mm;
+  text-align: center;
+}
+
+.brand-name {
+  font-family: var(--f-serif);
+  font-size: 21pt;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--c-coal);
+  line-height: 1;
+  margin-bottom: 2pt;
+}
+
+.brand-location {
+  font-size: 6.5pt;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--c-muted);
+  font-weight: 600;
+}
+
+h1, h2 {
+  font-family: var(--f-serif);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.eyebrow {
+  display: block;
+  font-size: 6pt;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--c-sage);
+  margin-bottom: 5mm;
+  text-align: center;
+}
+
+.line-accent {
+  width: 12mm;
+  height: 0.5pt;
+  background: var(--c-gold);
+  margin: 0 auto 6mm;
+  opacity: 0.8;
+}
+
+/* ============================================================
+   FRONT SIDE SPECIFICS
+   ============================================================ */
+.front-layout {
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.headline {
+  font-size: 34pt;
+  margin: 6mm 0 8mm;
+  line-height: 1;
+  letter-spacing: -0.015em;
+}
+
+.headline em {
+  font-style: italic;
+  color: var(--c-sage);
+  font-weight: 400;
+}
+
+.services-list {
+  list-style: none;
+  margin: 0 auto 10mm;
+  display: inline-block;
+}
+
+.services-list li {
+  font-size: 11pt;
+  font-family: var(--f-serif);
+  color: var(--c-coal);
+  margin-bottom: 4pt;
+  position: relative;
+  font-style: italic;
+  letter-spacing: 0.01em;
+}
+
+.front-footer {
+  margin-top: auto;
+  border-top: 0.5pt solid var(--c-border);
+  padding-top: 7mm;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5pt;
+}
+
+.contact-item {
+  font-size: 10.5pt; /* Slightly larger for prominence */
+  font-weight: 700;   /* Slightly bolder */
+  color: var(--c-coal);
+  display: flex;
+  justify-content: center;
+  gap: 3mm;
+  align-items: baseline;
+}
+
+.contact-label {
+  font-size: 6pt;
+  font-weight: 700;
+  color: var(--c-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  opacity: 0.8;
+}
+
+.footer-note {
+  margin-top: 4mm;
+  font-size: 7.2pt;
+  color: var(--c-muted);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ============================================================
+   BACK SIDE SPECIFICS
+   ============================================================ */
+.back-layout {
+  padding-top: 10mm;
+}
+
+.back-section {
+  margin-bottom: 8mm;
+}
+
+.back-title {
+  font-size: 20pt;
+  margin-bottom: 6mm;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+.service-desc-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5mm;
+}
+
+.service-item h3 {
+  font-family: var(--f-serif);
+  font-size: 11.5pt;
+  font-weight: 600;
+  color: var(--c-sage-dk);
+  margin-bottom: 2pt;
+  letter-spacing: 0.02em;
+}
+
+.service-item p {
+  font-size: 8.2pt;
+  line-height: 1.6;
+  color: var(--c-muted);
+  font-weight: 400;
+}
+
+.why-us {
+  background: var(--c-sage);
+  padding: 8mm var(--m-safe);
+  margin: 0 calc(var(--m-safe) * -1) 8mm;
+  color: var(--c-white);
+  position: relative;
+}
+
+.why-us h3 {
+  font-family: var(--f-serif);
+  font-size: 16pt;
+  font-weight: 400;
+  margin-bottom: 4mm;
+  text-align: center;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4mm 6mm;
+}
+
+.why-item {
+  font-size: 8pt;     /* Increased from 7.2pt */
+  line-height: 1.6;   /* Improved spacing */
+  opacity: 0.95;
+}
+
+.why-item b {
+  display: block;
+  font-size: 8pt;
+  margin-bottom: 1pt;
+  font-family: var(--f-sans);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+/* ============================================================
+   DECORATIVE ELEMENTS
+   ============================================================ */
+.abstract-circle {
+  position: absolute;
+  width: 200mm;
+  height: 200mm;
+  border-radius: 50%;
+  border: 0.2pt solid var(--c-gold);
+  opacity: 0.1;
+  top: -80mm;
+  right: -90mm;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.abstract-accent-top {
+  position: absolute;
+  top: 0; right: 0;
+  width: 45mm;
+  height: 45mm;
+  background: radial-gradient(circle at top right, rgba(115,138,122,0.08), transparent);
+  pointer-events: none;
+}
+
+.abstract-sage-footer {
+  position: absolute;
+  width: 100%;
+  height: 70mm;
+  background: linear-gradient(180deg, transparent, rgba(199,168,116,0.03));
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
