@@ -139,19 +139,6 @@ export const artworks: Artwork[] = [
     alt: 'Contemporary acrylic still life with vibrant oranges on a terracotta linen background',
     description: 'A contemporary take on the classical still life tradition. Juicy oranges glow against a warm terracotta background, painted with expressive loose brushwork.',
   },
-  {
-    slug: 'into-the-light',
-    title: 'Into the Light',
-    year: 2024,
-    medium: 'Acrylic on canvas',
-    dimensions: '90 × 120 cm',
-    price: '£2,400',
-    status: 'available',
-    tags: ['large format', 'abstract', 'light'],
-    image: '/artworks/placeholder-10.jpg',
-    alt: 'Large format abstract acrylic painting with luminous white and warm gold light burst',
-    description: 'A large, luminous work that invites the viewer into a space of pure light. Layers of translucent white, cream and warm gold create a radiant, almost spiritual atmosphere.',
-  },
 ];
 
 export function getArtworkBySlug(slug: string): Artwork | undefined {

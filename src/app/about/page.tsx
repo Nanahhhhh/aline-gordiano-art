@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
     title: 'About',
     description:
-        'Learn about Aline Gordiano — a London-based contemporary artist whose practice centres on expressive acrylic painting, colour and light.',
+        'Learn about Aline Gordiano — a London-based contemporary artist whose practice centres on expressive acrylic and oil painting, colour and light.',
 };
 
 export default function AboutPage() {
@@ -43,7 +43,7 @@ export default function AboutPage() {
                             Creative Journey
                         </h2>
                         <p className="text-sm leading-relaxed text-[#6B6B6B]" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                            Aline Gordiano discovered her love of painting early in life, experimenting with colour and texture as a way of making sense of the world around her. Her artistic journey has been shaped by years of exploration with acrylics — a medium she fell in love with for its versatility, vibrancy and directness.
+                            Aline Gordiano discovered her love of painting early in life, experimenting with colour and texture as a way of making sense of the world around her. Her artistic journey has been shaped by years of exploration with acrylics and oils — media she fell in love with for their versatility, vibrancy and directness.
                         </p>
                     </div>
 
