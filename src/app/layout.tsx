@@ -23,7 +23,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://alinegordianoart.com'),
   title: {
-    default: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic and Oil Paintings',
+    default: 'Aline Gordiano Art – Contemporary Acrylic and Oil Paintings, London',
+    template: '%s | Aline Gordiano Art',
   },
   description:
     'Aline Gordiano is a London-based contemporary artist creating original acrylic and oil paintings and accepting commission work. Explore original artworks, prints and bespoke commissions.',
