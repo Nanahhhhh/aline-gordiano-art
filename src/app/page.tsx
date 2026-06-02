@@ -77,7 +77,7 @@ export default function HomePage() {
             className="text-base text-[#6B6B6B] tracking-widest uppercase mb-12"
             style={{ fontFamily: 'var(--font-inter), sans-serif', fontWeight: 400 }}
           >
-            Contemporary Acrylic and Oil Paintings
+            ORIGINAL ACRYLIC AND OIL PAINTINGS SHAPED BY COLOUR, TEXTURE AND ATMOSPHERE.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -133,7 +133,7 @@ export default function HomePage() {
               The Artist
             </h2>
             <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Aline Gordiano is a London-based visual artist whose practice centres on expressive acrylic and oil painting. Drawing inspiration from light, colour, and the energy of the natural world, she creates works that invite quiet contemplation.
+              Aline Gordiano is a London-based artist creating original acrylic and oil paintings, with a focus on expressive portraiture, luminous landscapes and painterly texture.
             </p>
             <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
               Based in London, she works from her studio producing original paintings, limited edition prints, and accepting commissions for bespoke artworks.
