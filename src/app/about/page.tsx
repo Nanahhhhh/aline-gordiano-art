@@ -1,10 +1,11 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
     title: 'About',
     description:
-        'Learn about Aline Gordiano — a London-based contemporary artist whose practice centres on expressive acrylic and oil painting, colour and light.',
+        'Learn about Aline Gordiano — a London-based contemporary artist whose practice centres on expressive acrylic painting, colour and light.',
 };
 
 export default function AboutPage() {
@@ -17,19 +18,19 @@ export default function AboutPage() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
-                {/* Portrait placeholder */}
+                {/* Portrait */}
                 <div className="relative aspect-[3/4] bg-[#EDE8E2] flex items-center justify-center overflow-hidden">
                     <div
                         className="absolute inset-0 bg-gradient-to-b from-[#D4A080]/40 via-[#C5521A]/20 to-[#EDE8E2]"
                         aria-hidden
                     />
-                    <span
-                        className="relative text-[7rem] text-[#C5521A]/25"
-                        style={{ fontFamily: 'var(--font-cormorant), serif', fontWeight: 300, letterSpacing: '0.15em' }}
-                        aria-hidden
-                    >
-                        AG
-                    </span>
+                    <Image
+                        src="/artworks/3E28A48E-2F4E-43FD-8185-073FEFE1BB56.PNG"
+                        alt="Aline Gordiano in her studio"
+                        fill
+                        className="object-cover z-10"
+                        sizes="(max-width: 1024px) 50vw, (max-width: 640px) 100vw, 33vw"
+                    />
                 </div>
 
                 {/* Bio */}
@@ -43,7 +44,7 @@ export default function AboutPage() {
                             Creative Journey
                         </h2>
                         <p className="text-sm leading-relaxed text-[#6B6B6B]" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                            Aline Gordiano discovered her love of painting early in life, experimenting with colour and texture as a way of making sense of the world around her. Her artistic journey has been shaped by years of exploration with acrylics and oils — media she fell in love with for their versatility, vibrancy and directness.
+                            Aline Gordiano discovered her love of painting early in life, experimenting with colour and texture as a way of making sense of the world around her. Her artistic journey has been shaped by years of exploration with acrylics — a medium she fell in love with for its versatility, vibrancy and directness.
                         </p>
                     </div>
 
