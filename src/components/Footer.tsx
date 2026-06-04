@@ -36,8 +36,7 @@ export default function Footer() {
                             </p>
                         </div>
                         <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                            Contemporary acrylic paintings by London-based artist Aline Gordiano. Original artworks, prints.
-                            
+                            Contemporary acrylic and oil paintings by London-based artist Aline Gordiano. Original artworks, prints.
                         </p>
                     </div>
 

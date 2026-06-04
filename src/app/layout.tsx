@@ -23,17 +23,18 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://alinegordianoart.com'),
   title: {
-    default: 'Aline Gordiano Art — Contemporary Acrylic Paintings, London',
+    default: 'Aline Gordiano Art – Contemporary Acrylic and Oil Paintings, London',
     template: '%s | Aline Gordiano Art',
   },
   description:
-    'Aline Gordiano is a London-based contemporary artist creating original acrylic paintings and accepting commission work. Explore original artworks, prints and bespoke commissions.',
+    'Aline Gordiano is a London-based contemporary artist creating original acrylic and oil paintings and accepting commission work. Explore original artworks, prints and bespoke commissions.',
   keywords: [
     'London artist',
     'original paintings London',
     'acrylic artist London',
+    'oil artist London',
     'pet portrait artist London',
-    'commission art London',
+
     'contemporary art',
     'Aline Gordiano',
   ],
@@ -44,23 +45,23 @@ export const metadata: Metadata = {
     locale: 'en_GB',
     url: 'https://alinegordianoart.com',
     siteName: 'Aline Gordiano Art',
-    title: 'Aline Gordiano Art — Contemporary Acrylic Paintings, London',
+    title: 'Aline Gordiano Art — Contemporary Acrylic and Oil Paintings, London',
     description:
-      'Discover original acrylic paintings and commission work by London-based artist Aline Gordiano.',
+      'Discover original acrylic and oil paintings and commission work by London-based artist Aline Gordiano.',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Aline Gordiano Art — Contemporary Acrylic Paintings',
+        alt: 'Aline Gordiano Art — Contemporary Acrylic and Oil Paintings',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Aline Gordiano Art — Contemporary Acrylic Paintings, London',
+    title: 'Aline Gordiano Art — Contemporary Acrylic and Oil Paintings, London',
     description:
-      'Discover original acrylic paintings and commission work by London-based artist Aline Gordiano.',
+      'Discover original acrylic and oil paintings and commission work by London-based artist Aline Gordiano.',
     images: ['/og-image.jpg'],
   },
   robots: {

@@ -5,7 +5,7 @@ import { artworks } from '@/data/artworks';
 export const metadata: Metadata = {
     title: 'Gallery',
     description:
-        'Browse original acrylic paintings by Aline Gordiano — London-based contemporary artist. Each work is available to buy or enquire about.',
+        'Browse original acrylic and oil paintings by Aline Gordiano — London-based contemporary artist. Each work is available to buy or enquire about.',
 };
 
 export default function GalleryPage() {
@@ -18,7 +18,7 @@ export default function GalleryPage() {
                     className="text-sm text-[#6B6B6B] max-w-lg leading-relaxed"
                     style={{ fontFamily: 'var(--font-inter), sans-serif' }}
                 >
-                    Original acrylic paintings on canvas and linen. Each work is one-of-a-kind. Contact Aline to enquire about availability or purchase.
+                    Original acrylic and oil paintings on canvas and linen. Each work is one-of-a-kind. Contact Aline to enquire about availability or purchase.
                 </p>
             </div>
 

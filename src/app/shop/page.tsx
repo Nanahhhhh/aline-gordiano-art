@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata: Metadata = {
     title: 'Shop — Prints & Originals',
     description:
-        'Shop original acrylic paintings and fine art prints by Aline Gordiano, London-based contemporary artist. Available in A4, A3 and A2.',
+        'Shop original acrylic and oil paintings and fine art prints by Aline Gordiano, London-based contemporary artist. Available in A4, A3 and A2.',
 };
 
 const prints = [
@@ -52,7 +52,7 @@ export default function ShopPage() {
                     Original Paintings
                 </h2>
                 <p className="text-sm text-[#6B6B6B] mb-10 max-w-lg leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-                    All original acrylic paintings are one-of-a-kind works. Customers wishing to purchase an original are invited to contact Aline directly to discuss the work and arrange payment and delivery.
+                    All original acrylic and oil paintings are one-of-a-kind works. Customers wishing to purchase an original are invited to contact Aline directly to discuss the work and arrange payment and delivery.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4">
                     <Link href="/gallery" className="btn-primary" id="shop-view-gallery">

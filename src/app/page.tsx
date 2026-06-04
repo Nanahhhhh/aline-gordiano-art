@@ -4,9 +4,9 @@ import ArtworkCard from '@/components/ArtworkCard';
 import { getFeaturedArtworks } from '@/data/artworks';
 
 export const metadata: Metadata = {
-  title: 'Aline Gordiano Art — Contemporary Acrylic Paintings, London',
+  title: 'Aline Gordiano Art — Contemporary Acrylic and Oil Paintings, London',
   description:
-    'Discover original acrylic paintings and bespoke commission work by Aline Gordiano, a London-based contemporary artist.',
+    'Discover original acrylic and oil paintings and bespoke commission work by Aline Gordiano, a London-based contemporary artist.',
 };
 
 const jsonLd = {
@@ -19,7 +19,7 @@ const jsonLd = {
       url: 'https://alinegordianoart.com',
       sameAs: ['https://instagram.com/alinegordianoart'],
       address: { '@type': 'PostalAddress', addressLocality: 'London', addressCountry: 'GB' },
-      description: 'London-based contemporary artist creating original acrylic paintings and bespoke commissions.',
+      description: 'London-based contemporary artist creating original acrylic and oil paintings and bespoke commissions.',
     },
     {
       '@type': 'WebSite',
@@ -77,7 +77,7 @@ export default function HomePage() {
             className="text-base text-[#6B6B6B] tracking-widest uppercase mb-12"
             style={{ fontFamily: 'var(--font-inter), sans-serif', fontWeight: 400 }}
           >
-            Contemporary Acrylic Paintings
+            ORIGINAL ACRYLIC AND OIL PAINTINGS SHAPED BY COLOUR, TEXTURE AND ATMOSPHERE.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -106,7 +106,7 @@ export default function HomePage() {
             className="text-sm text-[#6B6B6B] max-w-md leading-relaxed"
             style={{ fontFamily: 'var(--font-inter), sans-serif' }}
           >
-            A curated selection of original acrylic paintings available for purchase or enquiry.
+            A curated selection of original acrylic and oil paintings available for purchase or enquiry.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -133,7 +133,7 @@ export default function HomePage() {
               The Artist
             </h2>
             <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
-              Aline Gordiano is a London-based visual artist whose practice centres on expressive acrylic painting. Drawing inspiration from light, colour, and the energy of the natural world, she creates works that invite quiet contemplation.
+              Aline Gordiano is a London-based artist creating original acrylic and oil paintings, with a focus on expressive portraiture, luminous landscapes and painterly texture.
             </p>
             <p className="text-sm text-[#A09890] leading-relaxed" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
               Based in London, she works from her studio producing original paintings, limited edition prints, and accepting commissions for bespoke artworks.
