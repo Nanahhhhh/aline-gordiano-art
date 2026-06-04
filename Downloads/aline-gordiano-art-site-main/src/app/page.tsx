@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import ArtworkCard from '@/components/ArtworkCard';
 import { getFeaturedArtworks } from '@/data/artworks';
+import { stat } from 'fs';
 
 export const metadata: Metadata = {
   title: 'Aline Gordiano | Contemporary Painter in London | Original Acrylic and Oil Paintings',
@@ -79,7 +80,7 @@ export default function HomePage() {
               className="text-base text-[#6B6B6B] tracking-widest uppercase mb-5"
               style={{ fontFamily: 'var(--font-inter), sans-serif', fontWeight: 400 }}
             >
-              Original acrylic and oil paintings shaped by colour, texture and atmosphere.
+              Original acrylic and oil paintings and artworks shaped by colour, texture and atmosphere.
             </p>
             <p
               className="text-sm text-[#6B6B6B] max-w-xl leading-relaxed mb-10 mx-auto lg:mx-0"
